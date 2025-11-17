@@ -7,62 +7,369 @@
     </head>
     <body>
         
-
-          <h1>Student Registrastion Form</h1> 
-          
-          <form action="">
-            <label for="">Student Name:</label> <input type="text"/>
-           </form>
-          <form action="">
-            <label for=""> Mobile No.</label> <input type="text"/>
-            <label for="">Email id</label> <input type="text"/>
-           </form>
-            <form action="">
-            <label for="">Father Name</label> <input type="text"/>  
-            <label for="">Mother Name</label> <input type="text"/>
-          </form>
-          <form action="">
-            <label for=""> Date of Birth</label> <input type="text"/>
-          </form>
-          <form action="">
-            <label for="">Address</label> <input type="text "/>
-          </form>
-
-
+         <!--1st form-->
          <h1>Student Registrastion Form</h1> 
          <form action="">
-            <label for="">Student Name:</label> <input type="text"/> <input type="number"/>
-           </form> 
+            <label for="">Student Name:</label> <input type="text"/> <input type="number"/> 
           <br/>
-           <form action="">
             <label for="">Father Name:</label> <input type="text"/>  
             <label for="">Mother Name:</label> <input type="text"/>
-          </form>
-          <br/>
-          <form action="">
+           <br/>
             <label for=""> Mobile No.</label> <input type="text"/>
-          </form> 
            <br/>
-           <form action="">
             <label for="">Email id</label> <input type="text"/>
-           </form>
            <br/>
-            <form>
             <label for=""> Date of Birth</label> <input type="text"/>
-          </form>
           <br/>
-          <form>
-            <label for="">select branch </label> <input type="text"/>
-              </form>
-            <p>1.CSE   2.IT   3.ECE   4.Civil </p>
-            
-            <form action="">
-                <label for="">Address</label> <input type="text">
+            <label for="">select branch </label>
+            <input type="checkbox"/> CSE
+              <input type="checkbox"/> IT
+            <input type="checkbox"/> ECE
+            <input type="checkbox"/> Civil
+             <label for="">Address</label> <input type="text">
             </form>
-            
-            
+            <hr/>
+        <!--2nd form-->
+        <h3>Student Registrastion Form</h3>
+        <form action="">
+            <label for="">Student Name:</label> 
+            <input type="text"/> <input type="text"/> <br><br>
 
-     
+           <label for="">Father Name:</label> <input type="text"/>
+             <label for="">Mother Name:</label> <input type="text"/> <br><br>
+
+            <label for="">Mobile No.</label> <input type="text"/> 
+            <label for="">Email ID:</label> <input type="text"/> <br><br>
+
+            <label for="">Date of birth:</label> <input type="text"/> 
+            <label for="">Age:</label> <input type="number"/> <br><br>
+
+          Select Gender <br/>
+            <label for="">Male</label> <input type="radio"/> 
+            <label for="">Female</label> <input type="radio"/> <br><br>
+
+         Select Branch <br/>
+         <label for="">Arts</label> <input type="checkbox"/> 
+         <label for="">Science</label> <input type="checkbox"/> 
+         <label for="">Commerce</label> <input type="checkbox"/> <br><br>
+
+           <input type="submit"/>
+            <input type="Reset"/>
+          <hr/>
+        </form>
+        <!---->
+        <h3>Registrastion form</h3>
+        <form action="">
+            <label for=""> Student Name:</label>
+            <input type="text"/> <input type="text"/> <br><br>
         
+          <label for="">Father Name:</label> <input type="text"/>
+          <label for="">Mother Name:</label> <input type="text"/> <br><br>
+         
+          <label for="">Mobile No.</label> <input type="password"  name="Mobile no."/> 
+          <label for="">Email ID:</label> <input type="email"/>  <br><br>
+
+          <label for="">Date of birth:</label> <input type="Date"/> 
+          <label for="">Age:</label> <input type="number"/> <br><br>
+    
+           <label for="">password</label> <input type="password"/> 
+          <label for="">Date:</label> <input type="date"/> <br><br>
+           
+          <label for="">Roll no:</label> <input type="number"/> 
+          <label for="">photo:</label> <input type="file"/> <br><br>
+
+            Select Branch <br/>
+         <label for="">Arts</label> <input type="checkbox"/> 
+         <label for="">Science</label> <input type="checkbox"/> 
+         <label for="">Commerce</label> <input type="checkbox"/> <br><br>
+
+          Select Gender <br/>
+            <label for="">Male</label> <input type="radio"/> 
+            <label for="">Female</label> <input type="radio"/> <br><br>
+
+           <input type="submit"/>
+            <input type="Reset"/>
+            </form>
+            <hr>
+
+          <label for="">choose a car:</label>
+         <select>
+            <option value="">Audi</option>
+            <option value="">Thar</option>
+            <option value="">Saab</option>
+          </select>
+
+           <label for="">choose a car:</label>
+         <select>
+            <option value="">Audi</option>
+            <option value="">Thar</option>
+            <option value="">Saab</option>
+          </select>
+        <textarea name="message" rows="10" cols="20">
+
+        </textarea>
+        <textarea name="message" style="width: 200px; height: 600px ;"></textarea>
+        <button type="button" >click me</button>
+
+    <fieldset>
+        <legend>form</legend>
+        <label for="">first name</label><br>
+        <input type="text" value="john"/>
+    </fieldset>
+
+<label for="browsers">Select Browsers</label>
+  <select name="browsers" id="">
+    <option value="chrome">Chrome</option>
+    <option value="safari">Safari</option>
+    <option value="Firefox">Firefox</option>
+  </select>
+
+<label for="courses">Select Courses</label>
+
+    <select name="courses" id="">
+   <optgroup label="Technical"> 
+     <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="javascript">js</option>
+   </optgroup>
+     <optgroup label="Communication"> 
+     <option value="html">English</option>
+    <option value="css">Interview</option>
+    <option value="javascript">German</option>
+   </optgroup>
+     <optgroup label="Technical"> 
+     <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="javascript">js</option>
+   </optgroup>
+  </select>
+    <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage"><br><br>
+
+  <label for="week">Select a week:</label>
+
+  <input type="week" id="week" name="week"><br><br>
+ <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range"  min="0" max="50"><br>
+
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number"  min="1" max="5"><br>
+  <label for="fname">First name:</label>
+  <input type="text" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text"  size="4"><br>
+
+<form>
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor">
+</form>
+</form>
+<!---->
+<h1>SAVING BANK ACCOUNT OPENING FORM</h1>
+<form>
+    
+<fieldset>
+        <fieldset>
+        <label for="">Name & code of the Branch</label><br>
+        <label>Cust ID</label> 
+        <inPut type="text"><br>
+        <label for="">A/C No.</label>
+         <input type="text">
+         <label>Affix Passport Size photo</label>
+         <input type="file">
+    </fieldset>
+    <!---->
+<h3>[FOR SMALL ACCOUNT]</h3>
+<label for="">Name in full (Mr/Ms)</label>
+<input type="text"><br><br>
+<label for="">Father/Husband/Gurdian name</label>
+<input type="text"><br><br>
+<label for="">Residental Address</label>
+<input type="text"><br><br>
+<label for="">Street No.& Name</label>
+<input type="text"><br><br>
+<label for="">Landmark</label>
+<input type="text"><br><br>
+<label for="">Village/City</label>
+<input type="text">
+<label for="">District</label>
+<input type="text"><br><br>
+<label for="">State</label>
+<input type="text"><br><br>
+<label for="">Pin</label>
+<input type="text"><br><br>
+ <label for="">Mobile No.</label>
+  <input type="text"/><br><br>
+  <!---->
+  <b>Sex:</b>
+  <label for="">male</label> <input type="radio">
+   <label for="">female</label> <input type="radio"/> <br><br>
+  <b> Occupation:</b> <br>
+  <label for="">Salaried</label> <input type="checkbox"/>     
+  <label for="">Self employed</label> <input type="checkbox"/> 
+  <label for="">Business</label> <input type="checkbox"/><br>
+  <label for="">student</label> <input type="checkbox"/> 
+  <label for="">Retired</label> <input type="checkbox"/> 
+  <label for="">Agriculture & Ailled</label> <input type="checkbox"/>
+  <label for="">Other specify</label> <input type="checkbox"><br><br>
+   <b> If Self employed:</b> <br>
+  <label for="">Doctor</label> <input type="checkbox"/>     
+  <label for="">lawyer</label> <input type="checkbox"/> 
+  <label for="">Busniess</label> <input type="checkbox"/><br>
+  <label for="">CA</label> <input type="checkbox"/> 
+  <label for="">Engineer</label> <input type="checkbox"/> 
+  <label for="">other</label> <input type="checkbox"/><br><br>
+ <b>Category:</b> <input type="text"> SC/ST/Other <br><br>
+ <!---->
+ <label for="">KYC Document provided</label> <input type="text"> Yes/No<br>
+ <label for="">Nomination Required</label> <input type="text">Yes/No<br>
+ <label for="">Request for ATM Debit Card</label> <input type="text">Yes/No <br>
+ <h3>Introduction [if applicable]:</h3>
+ <label for="">Name of the Introducer</label> <input type="text">
+ <label for="">Customer ID</label>
+ <input type="text">
+ <label for="">Account no.</label>
+ <input type="text"><br>
+ <p>I know Shri/Smit                for the past years/month. He/She is residing at the address given above. </p>
+ <label for="">Date:</label> 
+ <input type="date">
+ <label for=""> singature of the introducer</label> <input type="text">
+<P>Please open a Savings Bank account in the name of Mr./Ms./ (first/sole applicant.) and Mr./Ms. (second Applicant)**.The Saving Bank rules and regulation including those relating to small Account have been explained to me/ us and I/ we agree to abide by the same. An additional photography of sole/each applicant is attached. </P>
+<label for="">Date:</label> <input type="date"><br>
+<label for="">Place</label> <input type="text"> <br>
+<label for="">Singnature/Thumb Impression of first/ sole Applicant</label><input type="text"> 
+ <label for="">Singnature/Thumb Impression of second Applicant</label>
+  <input type="text"><br>
+  <label>Signature of Bussiness Correspondent/Facilitator</label>  <input type="text">
+<p>Name,SS No & Signature of the verifying branch offical <input type="text"> </p> 
+<p>**The Joint Account holder (i.e. second applicant) shall fill up a supplementry form.</p>
+</fieldset>
+<!---->
+<fieldset>
+    <h1>From II</h1>
+    <B>SAVING BANK ACCOUNT OPENING FORM-ADDITONAL INFORMATION</B><br>
+    (For Full KYC Compliance)<br><br>
+ <b> Mode of operation:</b> <br>
+ <ol>
+  <li>Self Only[   ] </li>   
+  <li>Former of Survivor[   ]</li>
+  <li>Either or Survivor[  ]</li><br>
+  <li>Any one or Survivor[  ]</li>
+  <li>Jointly[  ]</li>
+  <li>Any other (specify)[  ]</li>
+  </ol>
+  <b>PAN/GIR NO./FORM 60/61</b> <input type="text"><BR><br>
+    <b> Income Per annum:</b>
+    <ol>
+  <li>upto Rs.20000/-[   ]</li>
+  <li>Rs.20001 to 50000/-[   ]</li>
+   <li>50001 to 1lac/-[  ]</li><br>
+   <li>Rs.1000001 to 5lac/-[  ]</li>
+   <li>Rs. 500001 to 10lac/-[  ]</li>
+   <li>Above Rs. 10lac/-[  ]</li>
+   </ol>
+<b> Educational Qualification:</b>
+<ol>
+  <li><label for="">Upto HSC</label>[   ]</li>
+  <li><label for="">Graduate</label>[   ]</li><br>
+  <li><label for="">Post Graduate</label>[   ]</li>
+ <li> <label for="">Professional (PL.Specify)</label>[  ]</li>
+ </ol>
+  <label for="">Email ID</label> <input type="text"> <br>
+  <p>KYC Document: Identification proof:[  ]     Address Proof:[ ]</p>
+  <p>Request for add on:-</p>
+  <ol>
+    <li>e-statement of Account [Yes/No]</li>
+    <li>Cheque Book [Yes/No]</li>
+    <li>Mobile Banking [Yes/No]</li>
+    <li>Internet Banking [Yes/No]</li>
+    <li>Credit Card [Yes/No]</li>
+    <li>Others [Yes/No]</li>
+  </ol>
+  <p>Additional information for cross selling</p>
+  <p>I would like to also avail:-</p>
+  <ol>
+    <li>Housing loan [Yes/No]</li>
+    <li>Vehicle loan [Yes/No]</li>
+    <li>Mutual Fund [Yes/No]</li>
+    <li>Life/General INsurance [Yes/No]</li>
+    <li>Pension [Yes/No]</li>
+    <li>Others[Yes/No] </li>
+  </ol>
+  <p>I/we understand that  booklet on the banking codes & standards board pf India code (BCSBI) posted on your website shall be provided to me on demand.</p>
+  <b>Terms & Conditions:</b>
+  <p>I/we confirm having received, read and understood (a) the accounts rules and hereby agree to be bound by the terms & cnditions outlined in these rules which
+     governs the account(s) which I/we am/are opening/will open and (b) amendments to the rules made feom time to time and those relating to various services availed by me/us 
+     when displayed by the Bank on its noticed board or on its website and those  relating  to various offered by the Bank including but not limited to debit card,credit card, 
+     internet banking mobile banking and other facilities listed in this form. The usage of these facilities is governed by the terms and condition stipulated 
+     by the Bank from time to time.</p>
+     <label for=""> Date:</label> <input type="date"><br>
+     <label for="">Place:</label> <input type="text"><br>
+     <label for="">Signature/Thumb Impression of first/sole Applicant </label> <input type="text">
+     <label for="">Signature/Thumb Impression of second Applicant</label> <input type="text">
+</fieldset>
+     <fieldset>
+    <h1>FORM III</h1>
+    <b>SAVING BANK ACCOUNT OPENING FORM(supplementary form for second applicant)</b>
+     <fieldset>
+        <label for="">Name & code of the Branch</label><br>
+        <label>Cust ID</label> 
+        <inPut type="text"><br>
+        <label for="">A/C No.</label>
+         <input type="text">
+         <label>Affix Passport Size photo</label>
+         <input type="file">
+    </fieldset>
+    <label for="">Name in full (Mr/Ms)</label>
+<input type="text"><br><br>
+<label for="">Father/Husband/Gurdian name</label>
+<input type="text"><br><br>
+<label for="">Residental Address</label>
+<input type="text"><br><br>
+<label for="">Street No.& Name</label>
+<input type="text"><br><br>
+<label for="">Landmark</label>
+<input type="text"><br><br>
+<label for="">Village/City</label>
+<input type="text">
+<label for="">District</label>
+<input type="text"><br><br>
+<label for="">State</label>
+<input type="text"><br><br>
+<label for="">Pin</label>
+<input type="text"><br><br>
+ <label for="">Mobile No.</label>
+  <input type="text"/><br><br>
+  <!---->
+  <b>Sex:</b>
+  <label for="">male</label> <input type="radio">
+   <label for="">female</label> <input type="radio"/> <br><br>
+  <b> Occupation:</b> <br>
+  <label for="">Salaried</label> <input type="checkbox"/>     
+  <label for="">Self employed</label> <input type="checkbox"/> 
+  <label for="">Business</label> <input type="checkbox"/><br>
+  <label for="">student</label> <input type="checkbox"/> 
+  <label for="">Retired</label> <input type="checkbox"/> 
+  <label for="">Agriculture & Ailled</label> <input type="checkbox"/>
+  <label for="">Other specify</label> <input type="checkbox"><br><br>
+   <b> If Self employed:</b> <br>
+  <label for="">Doctor</label> <input type="checkbox"/>     
+  <label for="">lawyer</label> <input type="checkbox"/> 
+  <label for="">Busniess</label> <input type="checkbox"/><br>
+  <label for="">CA</label> <input type="checkbox"/> 
+  <label for="">Engineer</label> <input type="checkbox"/> 
+  <label for="">other</label> <input type="checkbox"/><br><br>
+ <b>Category:</b> <input type="text"> SC/ST/Other <br><br>
+ <!---->
+ <label for="">KYC Document provided</label> <input type="text"> Yes/No<br><br>
+ <input type="text"><br>
+ <label for="">Signature/Thumb Impression of second Applicant</label><br><br>
+ <label for="">Signature of Business Correspondent/Facilitator</label> <input type="text"><br><br>
+ <label for="">Name,SS & Signature of the verifying Branch offical</label> <input type="text"><br><br>
+</fieldset>
+</form>
     </body> 
-</html>
+</html> 

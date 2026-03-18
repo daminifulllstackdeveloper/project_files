@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+       
+    </style>
+    <div>
+        <h1>Addtion Quiz</h1>
+        <input class="input" type="text" id="input-one">
+        <input class="input" type="text" id="input-two">
+        <input class="input" type="text" id="input-three">
+        <div class="display" id="display-one"></div>
+        <button onclick="myfunction()">clickme</button>
+
+    </div>
+</body>
+<script>
+    function myfunction (){
+    let x=  Number(document.getElementById("input-one").value);
+    let y =  Number(document.getElementById("input-two").value);
+    let z= Number(document.getElementById("input-three").value);
+    let d = (x+y+z)/3;
+    //a + b
+    //let c = d==x
+   console.log(d)
+    document.getElementById("display-one").innerHTML = d
+ }
+  myfunction();
+</script>
+</html>

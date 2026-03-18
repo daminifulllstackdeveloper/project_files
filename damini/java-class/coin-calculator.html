@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gold Coin Chest</title>
+
+<style>
+body{
+    font-family: Arial;
+    text-align:center;
+    background:#2c3e50;
+    color:white;
+}
+
+.chest{
+    font-size:80px;
+    margin-top:30px;
+}
+
+#coins{
+    font-size:40px;
+    margin:20px;
+    color:gold;
+}
+
+button{
+    padding:12px 25px;
+    font-size:18px;
+    margin:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.add{background:rgb(23, 183, 223);}
+.sub{background:#037917;color:white;}
+
+</style>
+</head>
+
+<body>
+
+<h1>Gold Chest</h1>
+
+<div class="chest">🗳️</div>
+
+<div id="coins">0 Coins</div>
+
+<button class="add" onclick="addfunction()">Add +100</button>
+<button class="sub" onclick="subfunction()">Subtract -20</button>
+
+<script>
+
+
+let coins=0;
+
+  function addfunction() {
+    
+    coins+=100;
+    document.getElementById("coins").innerHTML = coins;
+}
+ 
+function subfunction() {
+   coins-=20
+    document.getElementById("coins").innerHTML = coins;
+}
+
+</script>
+
+</body>
+</html>

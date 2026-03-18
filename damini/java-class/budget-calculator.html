@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1></h1>
+        <input class="input" type="text" id="input-one">
+        <input class="input" type="text" id="input-two">
+        <input class="input" type="text" id="input-three">
+        <input class="input" type="text" id="input-four">
+        <input class="input" type="text" id="input-five">
+        <input class="input" type="text" id="input-six">
+        <div class="display" id="display-one"></div>
+        <button onclick="myfunction()">clickme</button>
+
+    </div>
+</body>
+<script>
+    function myfunction (){
+    let ia =  Number(document.getElementById("input-one").value);
+    let ib =  Number(document.getElementById("input-two").value);
+    let ic = Number(document.getElementById("input-three").value);
+    let Ex =  Number(document.getElementById("input-four").value);
+    let Ey =  Number(document.getElementById("input-five").value);
+    let Ez = Number(document.getElementById("input-six ").value);
+
+    let totalIncome =  ia + ib + ic;
+    let totalExpenses =   Ex+ Ey + Ez;
+    let totalSaving = totalIncome - totalExpenses
+    let dailySavings = totalSaving/30
+
+    document.getElementById("display-one").innerHTML= "Total  Income:" + totalIncome + "<br>" +"Total Expenses:" + totalExpenses + "<br>" + "Total saving" + totalSaving + "<br>" +  "daily saving" + dailySavings;
+    }
+    myfunction();
+</script>
+
+</html>

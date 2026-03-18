@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d"></div>
+    <button onclick="a()">click 1</button>
+    <button ondblclick="a()">click 1</button>
+    <button onmouseleave="a()">click 1</button>
+    <button onmouseover="a()">click 1</button>
+    <button onkeypress="a()">click 1</button>
+</body>
+<script>
+    function a(){
+        document.getElementById("d").innerHTML = "Hi"
+    }
+</script>
+</html>

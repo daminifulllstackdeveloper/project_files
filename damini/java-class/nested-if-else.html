@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+    <h2>Electricity Bill</h2>
+
+      <input type="text" id="input-one" class="input" placeholder="Enter unit consumed">
+       <input type="text" id="input-two" class="input" placeholder="Enter days">
+      <br>
+
+      <button onclick="electricBill()">Bill</button>
+      <div class="button" id="display"></div>
+  </div>
+
+    <script>
+         function electricBill() {
+            let units =  document.getElementById("input-one").value;
+            let day = document.getElementById("input-two").value;
+            if(units<=50){
+                document.getElementById("display").innerHTML = "bill"+units * 8;
+                if(days > 180){
+                    let latefee = 10000;
+                    let totalbill = Number(newbill+latefee);
+                    document.getElementById("display").innerHTML="Bill with late fees:" + totalbill + "And your electricity has been cut";
+
+                }
+                if(day>20){
+                    let latefee = 50;
+                    let totalbill = newbill + latefee;
+                    document.getElementById("display").innerHTML= "Bill with late fees" +totalbill;
+
+                }
+                else if (days > 90){
+                    let latefee = 1000;
+                    let totalbill = newbill + latefee;
+                    document.getElementById("display").innerHTML = "Bill with late fees :"+totalbill;
+                }
+            }
+            else if(units<=150){
+                let newbill = 50*8 + (units - 50)*10
+                let surplus = Number(newbill*0.05);
+                let totalbill = 
+                 document.getElementById("display").innerHTML = "bill"+newbill ;
+            }
+            else if (units<=250){
+                let newbill = 508 + 10010 + (units-150)*12;
+                 document.getElementById("display").innerHTML = "bill"+newbill +( newbill*0.01);
+            }
+            else if(units <= 350){
+                let newbill = 508 + 10010 + 100*12 +(units - 250)*15;
+                 document.getElementById("display").innerHTML = "bill"+newbill + (newbill*0.02);
+            }
+            else{
+                let newbill = 508 + 10010 + 10012+ 10015+(units-350)*20;
+                document.getElementById("display").innerHTML = newbill
+    
+            }
+              
+        }
+    </script>
+
+</body>
+</html>

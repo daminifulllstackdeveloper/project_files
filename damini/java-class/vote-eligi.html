@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input class="input" type="text" id="input-one">
+        <div class="display" id="display-one"></div>
+        <button onclick="myfunction()">clickme</button>
+
+    </div>
+    <script>
+        function myfunction() {
+            let age = document.getElementById("input-one").value;
+            let y = age >= 18;
+            document.getElementById("display-one").innerHTML = y;
+
+
+            //logical operator 
+            let inc1 = Number(document.getElementById("input-one").value);
+            let a = inc1 >= 18; //greater than 
+            let b = inc1 <= 60;//less than 
+            document.getElementById("result").innerHTML = a && b;
+        }
+
+
+
+
+
+
+
+
+
+
+        //comparison operators
+        //1.>greater than
+        //2. < less than
+        //3. >= greater than or equal to
+        //4.<= less than or equal to
+        //5. == equal to 
+        //6. != not equal to 
+        //7. === strict  equal  to (compares both value and type)
+        //8.!== strict not equal to (compares both value and type)
+
+        //logical operators
+        //1. && logical AND (returns true if both operands are true)
+        //2. || logical OR (returns true if at least one  operands is true)
+        //3. ! logical NOT (returns true if the operand is false)
+    </script>
+
+</body>
+
+</html>

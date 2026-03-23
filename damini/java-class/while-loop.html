@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input class="input" type=" text" id="input-one">
+    <button class="button" onclick="myFunction()">Click Me</button>
+    <div class="display-box" id="display"></div>
+    <div class="display-box" id="display-one"></div>
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById("input-one").value;
+            let y = 0;
+            let output = "";
+
+            while (y <= x.length) {
+                output += x.charAt(y) + "<br>"
+                document.getElementById("display").innerHTML = output;
+                console.log(output)
+                y++;
+            }
+
+            let z = "";
+            while (y >= 0) {
+                z += x.charAt(y)
+                console.log(z);
+                document.getElementById("display-one").innerHTML = z;
+                y--;
+            }
+
+            // check palindrome
+            if (x === rev) {
+                document.getElementById("display").innerHTML = "Palindrome ";
+            } else {
+                document.getElementById("display").innerHTML = "Not Palindrome ";
+            }
+        }
+    </script>
+</body>
+
+</html>

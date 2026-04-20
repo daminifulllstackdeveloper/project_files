@@ -1,0 +1,22 @@
+    .cover-contanier {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("https://c4.wallpaperflare.com/wallpaper/814/350/568/spa-beach-hotel-infinity-pool-wallpaper-preview.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .cover-inner-box {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 25px;
+    }
